@@ -27,6 +27,68 @@
   <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"
     onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="image" href="img/top/mv-sp.png" type="image/png">
+  <style>
+    /* === SP Optimization Overrides (Launch v3) === */
+    html, body { overflow-x: hidden; max-width: 100%; }
+    img { max-width: 100%; height: auto; }
+    section { overflow: hidden; }
+
+    @media (max-width: 768px) {
+      /* Point section (料理教室の特徴) - レイアウト圧縮 */
+      .point .point-body { padding: 40px 16px !important; }
+      .point .point-ttl { margin-bottom: 24px !important; }
+      .point .point-ttl h2 { font-size: 22px !important; line-height: 1.4 !important; }
+      .point .point-col { display: flex !important; flex-direction: column !important; gap: 20px !important; }
+      .point .point-item {
+        background: rgba(255,255,255,0.04) !important;
+        border: 1px solid rgba(185,170,122,0.35) !important;
+        border-radius: 8px !important;
+        padding: 20px 18px !important;
+        margin: 0 !important;
+        position: static !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .point .point-tab-sp { margin-bottom: 12px !important; }
+      .point .point-tab-sp img { max-width: 84px !important; height: auto !important; }
+      .point .point-inner {
+        padding: 0 !important;
+        background: transparent !important;
+        margin: 0 !important;
+        width: 100% !important;
+      }
+      .point .point-inner__ttl { margin-bottom: 12px !important; display: flex !important; align-items: center !important; gap: 8px !important; flex-wrap: wrap !important; }
+      .point .point-inner__ttl img { max-width: 28px !important; height: auto !important; flex-shrink: 0 !important; }
+      .point .point-inner__ttl h3 { font-size: 17px !important; line-height: 1.5 !important; margin: 0 !important; }
+      .point .point-line { display: none !important; }
+      .point .point-txt p { font-size: 13px !important; line-height: 1.85 !important; }
+
+      /* About section */
+      .about .about-body { padding: 40px 16px !important; }
+      .about .about-txt p { font-size: 14px !important; line-height: 1.95 !important; }
+      .about .about-ttl h2 { font-size: 22px !important; }
+      .about .about-img img { max-width: 100% !important; }
+      .about .about-cook1, .about .about-cook2, .about .about-cook3 { display: none !important; }
+
+      /* Pick section */
+      .pick .pick-body { padding: 40px 16px !important; }
+      .pick .pick-inner ul li { font-size: 14px !important; line-height: 1.85 !important; }
+
+      /* Flow / Booking / Review / Intro / Staff / FAQ */
+      .flow .flow-body, .booking .booking-body, .review .review-body, .intro .intro-body, .staff .staff-body, .faq .faq-body, .apply .apply-body {
+        padding: 40px 16px !important;
+      }
+      .flow h2, .booking h2, .review h2, .intro h2, .staff h2, .faq h2, .apply h2 { font-size: 22px !important; }
+
+      /* Hide parallax / header decorative bg */
+      .parallax { display: none !important; }
+
+      /* Global text */
+      h2 { font-size: 22px !important; line-height: 1.5 !important; }
+      h3 { font-size: 16px !important; line-height: 1.6 !important; }
+      p { font-size: 14px !important; line-height: 1.85 !important; }
+    }
+  </style>
 </head>
 
 <body>
